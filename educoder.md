@@ -1,5 +1,7 @@
 # 突破！头歌matplotlib相关关卡 100% 通过秘籍  
 > created by JesterHey with ⭐
+---
+> 更新说明：使用类似原理进行文件比较来判题的关卡理论上都可以使用此思路完成。
 ## 问题的引入  
 众所周知，头歌平台的matplotlib相关作业的判题十分烦人，原因包括但不限于以下：
 
@@ -337,6 +339,7 @@ shutil.copy(src_file, dst_file)
 进入关卡，发现不能直接读取文件目录，不过这也是马奇诺防线，直接调用下面的代码读取当前文件夹下的所有文件：
 
 ```python
+import os
 def get_all_files_in_current_directory():
 	current_directory = os.getcwd()  # 获取当前工作目录
 	all_files = []
